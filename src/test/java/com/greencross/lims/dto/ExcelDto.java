@@ -20,6 +20,6 @@ public class ExcelDto {
 
     @ExcelColumn(headerName = "age",
             headerStyle = @ExcelColumnStyle(excelCellStyleClass = MedicalStyle1.class))
-    private int age;
+    private Double age;
 
 }

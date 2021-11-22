@@ -82,8 +82,9 @@ public abstract class SXSSFExcelFile<T> implements com.greencross.lims.excel.Exc
 	public void write(OutputStream stream) throws IOException {
 		wb.write(stream);
 		wb.close();
-		wb.dispose();
+		stream.flush();
 		stream.close();
+		wb.dispose();
 	}
 
 }
